@@ -1,0 +1,148 @@
+:root {
+    --primary-text-color: rgb(36, 28, 21);
+    --secondary-text-color: rgb(255, 255, 255);
+    --background-color-light-gray: rgb(245, 245, 245);
+    --background-color-orange: rgb(215, 150, 55);
+    --background-color-yellow: rgb(230, 185, 95);
+    --background-color-beige: rgb(235, 225, 205);
+    --background-color-light-dark: rgb(35, 30, 21);
+    --cta-background-color: #ffe01b;
+
+}
+
+
+body {
+    font-family: Quicksand, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    order: -1;
+}
+
+.hero_section h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.625rem;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.card_section h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 133%;
+}
+
+.catch_quote {
+    font-size: 1.125rem;
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+}
+
+.hero_section {
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+
+.presentation_section {
+    background-color: var(--background-color-orange);
+}
+
+.skills_section {
+    background-color: var(--background-color-light-gray);
+}
+
+.job_section {
+    background-color: var(--background-color-yellow);
+}
+
+.course_section {
+    background-color: var(--background-color-beige);
+}
+
+.hobby_section {
+    background-color: var(--background-color-light-dark);
+}
+
+.form_section {
+    background-color: var(--background-color-light-gray);
+}
+
+.quality_section {
+    background-color: var(--background-color-light-gray);
+    margin: .8rem;
+    border-radius: .5rem;
+}
+
+.card_section {
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: var(--background-color-yellow);
+}
+
+.cta_button__container {
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.cta_button {
+    background-color: var(--cta-background-color);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    border: var(--primary-text-color) 1px solid;
+    border-radius: 2rem;
+    padding: .75rem 1.5rem;
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+}
+
+.presentation_section__figure {
+    position: relative;
+}
+
+.presentation_section__floating_text1,
+.presentation_section__floating_text2,
+.presentation_section__floating_text3 {
+    font-size: 0.8125rem;
+    background-color: var(--secondary-text-color);
+    padding: .5rem .3rem;
+    border-radius: .5rem;
+    position: absolute;
+}
+
+
+.presentation_section__floating_text1{
+    top: 22px;
+    left: 167px;
+}
+
+.presentation_section__floating_text2{
+    top: 64px;
+    left: 167px;
+}
+
+.presentation_section__floating_text3 {
+    max-width: 200px;
+    top: 121px;
+    left: 170px;
+}
