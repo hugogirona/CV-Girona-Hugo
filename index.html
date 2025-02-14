@@ -23,51 +23,53 @@
 <h1 class="hidden">Bienvenue</h1>
 <header>
     <nav class="primary_nav">
-        <h2 class="hidden">Navigation primaire</h2>
-        <span id="logo">Mon logo</span>
-        <a href="#" class="cta_button" title="Vers le formulaire de contact">Me contacter</a>
-        <ul class="primary_nav__list">
-            <li><a href="#" title="Vers la section de présentation">Une brève présentation</a></li>
-            <li><a href="#" title="Vers la section de mes compétences">Mes compétences</a></li>
-            <li><a href="#" title="Vers la section de mes experiences professionnelles" >Mes expériences professionnelles</a></li>
-            <li><a href="#" title="Vers la section de mes formations">Mes formations</a></li>
-            <li><a href="#" title="Vers la section de mes qualités">Pourquoi me choisir&nbsp;?</a></li>
+        <h2 class="visually-hidden">Navigation principale</h2>
+        <span class="nav__logo">Mon logo</span>
+        <a href="#" class="nav__cta" title="Vers le formulaire de contact">Me contacter</a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Une brève présentation</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Mes compétences</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Mes expériences professionnelles</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Mes formations</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Pourquoi me choisir&nbsp;?</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section class="hero_section">
-        <h2>Hugo Girona développeur web</h2>
-        <p class="catch_quote">Ma maîtrise de divers langages de programmation me permet d’être polyvalent et de répondre efficacement aux besoins
+        <h2 class="hero__title">Hugo Girona développeur web</h2>
+        <p class="hero__quote">Ma maîtrise de divers langages de programmation me permet d’être polyvalent et de répondre efficacement aux besoins
             variés du développement web.</p>
-        <div class="cta_button__container">
-            <a href="#" class="cta_button" title="Vers le formulaire de contact">Me contacter</a>
+        <div class="hero__cta">
+            <a href="#" class="hero__cta-button" title="Vers le formulaire de contact">Me contacter</a>
         </div>
     </section>
     <section class="presentation_section card_section">
         <h2 class="presentation_section__title">Une brève présentation</h2>
         <figure class="presentation_section__figure">
-            <img src="img/presentation-card-img-2x.jpeg" srcset="img/presentation-card-img-2x.jpeg 1x, img/presentation-card-img-1x.jpeg 2x" alt="une image de moi-même" width="390" height="242">
-            <figcaption class="hidden">présentation de l'auteur</figcaption>
-            <span class="presentation_section__floating_text1">Hugo Girona</span>
-            <span class="presentation_section__floating_text2">25 ans</span>
-            <span class="presentation_section__floating_text3">Étudiant à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> à Seraing dans un bachelier en techniques  infographiques, option web et multimédia.</span>
+            <img src="img/presentation-card-img-2x.jpeg" alt="une image de moi-même">
+            <figcaption class="visually-hidden">présentation de l'auteur</figcaption>
+            <span class="presentation_section__text presentation_section__text--name">Hugo Girona</span>
+            <span class="presentation_section__text presentation_section__text--age">25 ans</span>
+            <span class="presentation_section__text presentation_section__text--school">
+                Étudiant à la HEPL en techniques infographiques, option web.
+            </span>
         </figure>
         <p>Je suis un passionné de technologie et je suis constamment en recherche d'amélioration personnelle, via
             notamment une veille technologique sur des sites comme
             <i>Alsacréation</i>, <i>A List Apart</i> ou encore <i>SmashingDesign</i>.</p>
     </section>
     <section class="skills_section card_section">
-        <h2>J'apprends les bonnes pratiques du web à la HEPL</h2>
-        <img src="img/illustration_fusee-1x.png" srcset="img/illustration_fusee-1x.png 1x, img/illustration_fusee-2x.png 2x" alt="Illustration d'un ordinateur avec un engrenage et une fusee" width="400" height="300">
-        <div class="skills_section__container">
-            <p>Site optimisé et performant</p>
-            <p>Respect des normes d'accessibilité</p>
-            <p>Code de qualité respectant les meilleures pratiques</p>
-        </div>
+        <h2 class="skills_section__title">J'apprends les bonnes pratiques du web à la HEPL</h2>
+        <img src="img/illustration_fusee-1x.png" srcset="img/illustration_fusee-1x.png 1x, img/illustration_fusee-2x.png 2x" alt="Illustration d'un ordinateur avec un engrenage et une fusee" width="463" height="434">
+        <ul class="skills__list">
+            <li class="skills__item">Site optimisé et performant</li>
+            <li class="skills__item">Respect des normes d'accessibilité</li>
+            <li class="skills__item">Code de qualité respectant les meilleures pratiques</li>
+        </ul>
     </section>
     <section class="job_section card_section">
-        <h2>Mes expériences professionnelles</h2>
+        <h2 class="job_section__title">Mes expériences professionnelles</h2>
         <img src="img/Waiter.svg" alt="dessin stylisé d'un serveur en HORECA">
         <div class="job_section__container">
             <p><span class="item_name">Serveur en salle</span><span class="item_date">2023 - Aujourd’hui</span>Restaurants
@@ -130,101 +132,99 @@
         <h2>Mes loisirs</h2>
         <p>Selon moi les loisirs ont une part très imporrtante dans l’apprentissage car ils permettent de recharger ses
             batteries, stimuler sa créativité et maintenir un équilibre essentiel pour une meilleure productivité.</p>
-        <div class="hobbies_section_container">
-            <p class="hobby">Je pratique une veille numérique pour rester à jour sur les dernières avancées dans mon
+        <div class="hobbies_section__container">
+            <p class="hobbies_section__hobby">Je pratique une veille numérique pour rester à jour sur les dernières avancées dans mon
                 domaine.</p>
-            <p class="hobby">J’apprécie écouter et jouer de la musique.</p>
-            <p class="hobby">J’aime jouer a un bon jeu vidéo.</p>
-            <p class="hobby">J’aime également m’essayer au dessin.</p>
+            <p class="hobbies_section__hobby">J’apprécie écouter et jouer de la musique.</p>
+            <p class="hobbies_section__hobby">J’aime jouer a un bon jeu vidéo.</p>
+            <p class="hobbies_section__hobby">J’aime également m’essayer au dessin.</p>
         </div>
     </section>
        <section class="quality_section">
            <h2>Pourquoi me choisir ?</h2>
-           <div class="quality_container">
-               <p class="quality">Je suis motivé et n’ai pas peur des challenges</p>
-               <p class="quality">Je m’adapte facilement dans les différents environnements que je cottoie</p>
-               <p class="quality">Je travaille pour rendre le web plus qualitatif et accessible</p>
+           <div class="quality_section__container">
+               <p class="quality_section__quality">Je suis motivé et n’ai pas peur des challenges</p>
+               <p class="quality_section__quality">Je m’adapte facilement dans les différents environnements que je cottoie</p>
+               <p class="quality_section__quality">Je travaille pour rendre le web plus qualitatif et accessible</p>
            </div>
        </section>
     <section class="form_section">
         <h2>N’hesitez pas à me contacter !</h2>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Informations personnelles</legend>
+        <form class="form" action="#" method="post">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Informations personnelles</legend>
 
                 <!-- Champ Nom -->
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                <label class="form__label" for="nom">Nom</label>
+                <input class="form__input" type="text" id="nom" name="nom" required placeholder="Votre nom">
 
                 <!-- Champ Prénom -->
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                <label class="form__label" for="prenom">Prénom</label>
+                <input class="form__input" type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
             </fieldset>
 
             <!-- Champ Email -->
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="exemple@domaine.com">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" required placeholder="exemple@domaine.com">
 
             <!-- Champ Sélection -->
-            <label for="budget">Quel est votre budget&nbsp;?</label>
-            <select name="budget" id="budget" required>
-                <option value="" disabled selected>Choisissez une tranche de prix</option>
-                <option value="0€-2500€">0€ - 2.500€</option>
-                <option value="2500€-5000€">2.500€ - 5.000€</option>
-                <option value="5000€-10000€">5.000€ - 10.000€</option>
-                <option value="10000€-30000€">10.000€ - 30.000€</option>
-                <option value="30000€+">30.000€ +</option>
+            <label class="form__label" for="budget">Quel est votre budget&nbsp;?</label>
+            <select class="form__select" name="budget" id="budget" required>
+                <option class="form__option" value="" disabled selected>Choisissez une tranche de prix</option>
+                <option class="form__option" value="0€-2500€">0€ - 2.500€</option>
+                <option class="form__option" value="2500€-5000€">2.500€ - 5.000€</option>
+                <option class="form__option" value="5000€-10000€">5.000€ - 10.000€</option>
+                <option class="form__option" value="10000€-30000€">10.000€ - 30.000€</option>
+                <option class="form__option" value="30000€+">30.000€ +</option>
             </select>
 
             <!-- Champ Message -->
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+            <label class="form__label" for="message">Message</label>
+            <textarea class="form__textarea" id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
 
             <!-- Bouton d'envoi -->
-            <button type="submit">Me contacter</button>
+            <button class="form__button" type="submit">Me contacter</button>
         </form>
     </section>
 </main>
 <footer>
-    <div class="socials_container">
-        <p>Me suivre&nbsp;:</p>
-        <a href="https://github.com/hugogirona" title="Vers mon profil GitHub">Vers mon profil GitHub</a>
-        <a href="https://www.linkedin.com/in/hugo-g-827691110/" title="Vers mon profil LinkedIn">Vers mon profil
-            LinkedIn</a>
-        <a href="https://www.instagram.com/gironah_/" title="Vers mon profil Instagram">Vers mon profil Instagram</a>
+    <div class="footer__socials">
+        <p class="footer__socials-title">Me suivre&nbsp;:</p>
+        <a href="https://github.com/hugogirona" class="footer__socials-link" title="Vers mon profil GitHub">Vers mon profil GitHub</a>
+        <a href="https://www.linkedin.com/in/hugo-g-827691110/" class="footer__socials-link" title="Vers mon profil LinkedIn">Vers mon profil LinkedIn</a>
+        <a href="https://www.instagram.com/gironah_/" class="footer__socials-link" title="Vers mon profil Instagram">Vers mon profil Instagram</a>
     </div>
 
     <hr>
 
-    <div class="socials_container__nav">
-        <h3>Navigation</h3>
-        <ul class="socials_container__nav__list">
-            <li><a href="#" title="Vers la section de présentation">Une brève présentation</a></li>
-            <li><a href="#" title="Vers la section de mes compétences">Mes compétences</a></li>
-            <li><a href="#" title="Vers la section de mes experiences professionnelles" >Mes expériences professionnelles</a></li>
-            <li><a href="#" title="Vers la section de mes formations">Mes formations</a></li>
-            <li><a href="#" title="Vers la section de mes qualités">Pourquoi me choisir&nbsp;?</a></li>
+    <div class="footer__nav">
+        <h3 class="footer__nav-title">Navigation</h3>
+        <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-item" title="Vers la section de présentation">Une brève présentation</a></li>
+            <li><a href="#" class="footer__nav-item" title="Vers la section de mes compétences">Mes compétences</a></li>
+            <li><a href="#" class="footer__nav-item" title="Vers la section de mes experiences professionnelles">Mes expériences professionnelles</a></li>
+            <li><a href="#" class="footer__nav-item" title="Vers la section de mes formations">Mes formations</a></li>
+            <li><a href="#" class="footer__nav-item" title="Vers la section de mes qualités">Pourquoi me choisir&nbsp;?</a></li>
         </ul>
     </div>
 
-    <div class="socials_container__contact">
-        <h3>Contact</h3>
-        <ul>
-            <li><a href="">Via le formulaire de contact</a></li>
-            <li>+32 (0)470 54 84 53</li>
+    <div class="footer__contact">
+        <h3 class="footer__contact-title">Contact</h3>
+        <ul class="footer__contact-list">
+            <li><a href="#" class="footer__contact-item">Via le formulaire de contact</a></li>
+            <li class="footer__contact-item">+32 (0)470 54 84 53</li>
         </ul>
     </div>
 
-    <div class="socials_container__useful_links">
-        <h3>Liens utiles</h3>
-        <ul class="socials_container__useful_links__list">
-            <li><a href="https://mailchimp.com/fr/?currency=EUR" title="Vers le site de Mailchimp">Site original - Mailchimp.com</a></li>
-            <li><a href="https://www.alsacreations.com/" title="Vers le site d'Alsacréation">Alsacréation</a></li>
-            <li><a href="https://alistapart.com/" title="Vers le site de A List Appart">A List Appart</a></li>
-            <li><a href="https://www.smashingmagazine.com/" title="Vers le site de Smashing Magazine">SmashingDesign</a></li>
+    <div class="footer__useful-links">
+        <h3 class="footer__useful-links-title">Liens utiles</h3>
+        <ul class="footer__useful-links-list">
+            <li><a href="https://mailchimp.com/fr/?currency=EUR" class="footer__useful-links-item" title="Vers le site de Mailchimp">Site original - Mailchimp.com</a></li>
+            <li><a href="https://www.alsacreations.com/" class="footer__useful-links-item" title="Vers le site d'Alsacréation">Alsacréation</a></li>
+            <li><a href="https://alistapart.com/" class="footer__useful-links-item" title="Vers le site de A List Appart">A List Appart</a></li>
+            <li><a href="https://www.smashingmagazine.com/" class="footer__useful-links-item" title="Vers le site de Smashing Magazine">SmashingDesign</a></li>
         </ul>
     </div>
-
 </footer>
 </body>
 </html>
