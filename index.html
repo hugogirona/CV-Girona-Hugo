@@ -22,10 +22,11 @@
 <body>
 <h1 class="sro">Bienvenue</h1>
 <header>
-    <nav class="primary_nav">
-        <h2 class="visually-hidden">Navigation principale</h2>
+    <nav class="primary_nav ">
+        <h2 class="sro">Navigation principale</h2>
         <span class="nav__logo">Mon logo</span>
         <a href="#" class="nav__cta" title="Vers le formulaire de contact">Me contacter</a>
+
         <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">Une brève présentation</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Mes compétences</a></li>
@@ -50,7 +51,7 @@
 
     <section class="presentation_section card_section">
         <h2 class="sro">Card Section</h2>
-        <article class="course_section__article">
+        <article class="course_section__article card_section__article">
             <h3 class="presentation_section__title">Une brève présentation</h3>
             <img src="img/mobile1.webp"
                  srcset="img/mobile1.webp x1, img/mobile1-HD.webp x2"
@@ -62,7 +63,7 @@
                     via
                     notamment une veille technologique sur des sites comme
                     <i>Alsacréation</i>, <i>A List Apart</i> ou encore <i>SmashingDesign</i>.</p>
-                <a href="#" class="secondary-button">Consulter une liste de blog pour les développeurs</a>
+                <a href="#" class="secondary-button">Lien vers mon profil GitHub</a>
             </div>
         </article>
     </section>
@@ -70,7 +71,7 @@
 
     <section class="skills_section card_section">
         <h2 class="sro">Card Section</h2>
-        <article class="skills_section__article">
+        <article class="skills_section__article card_section__article">
             <h3 class="skills_section__title">J'apprends les bonnes pratiques du web à la <abbr
                     title="Haute École de la Province de Liège">HEPL</abbr></h3>
             <img src="img/mobile2.webp"
@@ -79,7 +80,8 @@
                  width="530"
                  height="330">
             <div class="card_section__container">
-                <p>Site optimisé et performant, respect des normes d'accessibilité, code de qualité respectant les meilleures pratiques.</p>
+                <p>Site optimisé et performant, respect des normes d'accessibilité, code de qualité respectant les
+                    meilleures pratiques.</p>
                 <a href="#" class="secondary-button">Vers la guideline des standards du web</a>
             </div>
         </article>
@@ -87,7 +89,7 @@
 
 
     <section class="job_section card_section">
-        <article class="job_section__article">
+        <article class="job_section__article card_section__article">
             <h2 class="sro">Card Section</h2>
             <h3 class="job_section__title">Mes expériences professionnelles</h3>
             <img src="img/mobile3.webp"
@@ -99,7 +101,7 @@
                 <p>Mon expérience en tant que serveur m’a apprise à gérer la pression, à offrir un service client de
                     qualité et à travailler en équipe. J’ai aussi développé mon sens de l’organisation et ma capacité
                     d’adaptation.</p>
-                <a href="#" class="secondary-button">Vers la guideline des standards du web</a>
+                <a href="#" class="secondary-button">Vers le site du Sotto Piano</a>
             </div>
         </article>
     </section>
@@ -107,7 +109,7 @@
 
     <section class="course_section card_section">
         <h2 class="sro">Card Section</h2>
-        <article class="course_section__article">
+        <article class="course_section__article card_section__article">
             <h3>Mes formations</h3>
             <img src="img/mobile4.webp"
                  srcset="img/mobile4.webp x1, img/mobile4-HD.webp x2"
@@ -134,14 +136,14 @@
         <h2>Mes loisirs</h2>
         <p>Selon moi les loisirs ont une part très importante dans l’apprentissage, car ils permettent de recharger ses
             batteries, stimuler sa créativité et maintenir un équilibre essentiel pour une meilleure productivité.</p>
-        <div class="hobbies_section__container">
-            <p class="hobbies_section__hobby">Je pratique une veille numérique pour rester à jour sur les dernières
+        <ul class="hobbies_section__list">
+            <li class="hobbies_section__hobby">Je pratique une veille numérique pour rester à jour sur les dernières
                 avancées dans mon
-                domaine.</p>
-            <p class="hobbies_section__hobby">J’apprécie écouter et jouer de la musique.</p>
-            <p class="hobbies_section__hobby">J’aime jouer à un bon jeu vidéo.</p>
-            <p class="hobbies_section__hobby">J’aime également m’essayer au dessin.</p>
-        </div>
+                domaine.</li>
+            <li class="hobbies_section__hobby">J’apprécie écouter et jouer de la musique.</li>
+            <li class="hobbies_section__hobby">J’aime jouer à un bon jeu vidéo.</li>
+            <li class="hobbies_section__hobby">J’aime également m’essayer au dessin.</li>
+        </ul>
     </section>
 
 
@@ -202,31 +204,31 @@
         </form>
     </section>
 
-    <section class="skills_section">
+    <section class="lang_section">
         <h2>Les langages que je maîtrise</h2>
-        <div class="skills_section__container">
-            <article class="skills_section__container__skill_item">
+        <div class="lang_section__container">
+            <article class="lang_section__container__lang_item">
                 <h3>JavaScript</h3>
                 <p>JavaScript est un langage de programmation de scripts utilisé pour rendre les pages web
                     dynamiques.</p>
             </article>
-            <article class="skills_section__container__skill_item">
+            <article class="lang_section__container__lang_item">
                 <h3>TypeScript</h3>
                 <p>TypeScript est un langage de programmation typé et évolutif qui s’appuie sur JavaScript.</p>
             </article>
-            <article class="skills_section__container__skill_item">
+            <article class="lang_section__container__lang_item">
                 <h3>HTML</h3>
                 <p>HTML est le langage de balisage utilisé pour créer la structure et le contenu des pages web.</p>
             </article>
-            <article class="skills_section__container__skill_item">
+            <article class="lang_section__container__lang_item">
                 <h3>CSS</h3>
                 <p>MySQL est un système de gestion de base de données relationnelles open source.</p>
             </article>
-            <article class="skills_section__container__skill_item">
+            <article class="lang_section__container__lang_item">
                 <h3>PHP</h3>
                 <p>PHP est un langage de programmation côté serveur utilisé pour créer des pages web dynamiques.</p>
             </article>
-            <article class="skills_section__container__skill_item">
+            <article class="lang_section__container__lang_item">
                 <h3>MySQL</h3>
                 <p>MySQL est un système de gestion de base de données relationnelles open source.</p>
             </article>
